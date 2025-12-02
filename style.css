@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0.5);
+    position: sticky;
+    top : 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}  
+#home{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0.5);
+    height:840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before {
+    content:"";
+    position :absolute;
+    top:0;
+    right:0;
+   background:url('image.jpeg') no-repeat center center/cover;
+   
+   height: 900px;
+   width: 100%;
+   z-index:-1;
+   opacity:.8;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+   /* border: 1px solid white;*/
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin:40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+    outline:none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+
+
+.profile-image {
+    width: 300px;
+    height: 400px;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 20px auto;
+    margin-inline: 0.9px;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    }
+     
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+display: flex;
+}
+#pic img {
+width:575px;
+height: 400px;
+border: 7px solid black;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    font-size: larger;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#education {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #education h2 {
+    margin-top: 0;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  #education h2:hover {
+    color: #555;
+  }
+  
+  #education ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #education li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #education h3 {
+    margin-top: 0;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  #education h3:hover {
+    color: #666;
+  }
+  
+  #education p {
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  #education li:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #education a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #education a:hover {
+    background-color: #555;
+  }
+  
+  
+/*contact section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0,0.9);
+    color:white;
+    padding:20px;
+    
+}
+.form {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input {
+    padding :12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin :15px;
+    border: none;
+    outline: none;
+
+}
+#send {
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
